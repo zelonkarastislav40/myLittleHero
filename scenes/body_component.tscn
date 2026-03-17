@@ -1,39 +1,32 @@
 [gd_scene format=3 uid="uid://d3njc3s7yqexu"]
 
-[ext_resource type="Texture2D" uid="uid://fys5jhvpdveq" path="res://sprites/ChatGPT Image Mar 15, 2026, 07_09_46 PM.png" id="1_l7crl"]
+[ext_resource type="PackedScene" uid="uid://8ejg1vd0kx1h" path="res://scenes/equipment_component.tscn" id="1_l7crl"]
 
 [node name="BodyComponent" type="Node2D" unique_id=1152251966]
 
-[node name="legs" type="Sprite2D" parent="." unique_id=1633831232]
-position = Vector2(-2.9999995, 111.99999)
+[node name="Legs" parent="." unique_id=146026166 instance=ExtResource("1_l7crl")]
+position = Vector2(0, 51)
 scale = Vector2(0.92857146, 0.7794118)
-texture = ExtResource("1_l7crl")
-region_enabled = true
-region_rect = Rect2(481.95905, 872.2785, 84.91785, 204.97406)
+type = "Legs"
+eq_id = "30000"
+sprite_path = "res://sprites/legsBasic.png"
 
-[node name="leftArm" type="Sprite2D" parent="." unique_id=1693127368]
-position = Vector2(-62.000004, 33)
-scale = Vector2(0.66129035, 0.79611653)
-texture = ExtResource("1_l7crl")
-region_enabled = true
-region_rect = Rect2(519.3201, 540.332, 93.70245, 103.95117)
+[node name="LeftArm" parent="." unique_id=1611315623 instance=ExtResource("1_l7crl")]
+visible = false
+type = "Larm"
+eq_id = "40000"
 
-[node name="chest" type="Sprite2D" parent="." unique_id=858860972]
-texture = ExtResource("1_l7crl")
-region_enabled = true
-region_rect = Rect2(341.653, 293.41324, 128.92566, 142.1488)
+[node name="Torso" parent="." unique_id=206658165 instance=ExtResource("1_l7crl")]
+position = Vector2(0, 26)
+type = "Torso"
+eq_id = "20000"
+sprite_path = "res://sprites/basicTunic.png"
 
-[node name="head" type="Sprite2D" parent="." unique_id=684899988]
-position = Vector2(-11.999998, -88.28125)
-scale = Vector2(0.8988763, 1.0051137)
-texture = ExtResource("1_l7crl")
-region_enabled = true
-region_rect = Rect2(378.89984, 149.79991, 94.69119, 110.000015)
+[node name="RightArm" parent="." unique_id=739860392 instance=ExtResource("1_l7crl")]
+visible = false
+type = "Rarm"
+eq_id = "40000"
 
-[node name="rightArm" type="Sprite2D" parent="." unique_id=1111553259]
-position = Vector2(40, 46.000004)
-rotation = -0.24979512
-scale = Vector2(0.6501775, 0.9026315)
-texture = ExtResource("1_l7crl")
-region_enabled = true
-region_rect = Rect2(514.92786, 726.27277, 103.95111, 95.166565)
+[node name="Head" parent="." unique_id=929654426 instance=ExtResource("1_l7crl")]
+type = "Head"
+eq_id = "10000"

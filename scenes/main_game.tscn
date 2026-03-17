@@ -20,12 +20,16 @@ color = Color(0.34737766, 0.39235598, 0.16828313, 1)
 
 [node name="Button" type="Button" parent="Control" unique_id=153310982]
 layout_mode = 0
-offset_left = 130.0
-offset_top = 140.0
-offset_right = 312.0
-offset_bottom = 199.0
+offset_left = 256.0
+offset_top = 153.0
+offset_right = 438.0
+offset_bottom = 212.0
 
 [node name="Hero" parent="." unique_id=1153301032 instance=ExtResource("2_72e8q")]
 position = Vector2(577, 280)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1363956317]
+position = Vector2(573, 320)
+zoom = Vector2(1.705, 1.705)
 
 [connection signal="pressed" from="Control/Button" to="Hero" method="_on_button_pressed"]

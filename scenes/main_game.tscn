@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cqv7q53bjhpiq"]
+
+[ext_resource type="Script" uid="uid://bf16iex5r3uip" path="res://scripts/main_game.gd" id="1_s3esy"]
+[ext_resource type="PackedScene" uid="uid://dkggun3clpnr" path="res://scenes/hero.tscn" id="2_72e8q"]
+
+[node name="MainGame" type="Node2D" unique_id=657802919]
+script = ExtResource("1_s3esy")
+
+[node name="Control" type="Control" parent="." unique_id=1775408035]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 649.0
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=214924226]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 652.0
+color = Color(0.34737766, 0.39235598, 0.16828313, 1)
+
+[node name="Button" type="Button" parent="Control" unique_id=153310982]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 140.0
+offset_right = 312.0
+offset_bottom = 199.0
+
+[node name="Hero" parent="." unique_id=1153301032 instance=ExtResource("2_72e8q")]
+position = Vector2(577, 280)
+
+[connection signal="pressed" from="Control/Button" to="Hero" method="_on_button_pressed"]

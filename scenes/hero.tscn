@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dkggun3clpnr"]
+
+[ext_resource type="PackedScene" uid="uid://d3njc3s7yqexu" path="res://scenes/body_component.tscn" id="1_3uyx6"]
+[ext_resource type="Script" uid="uid://ci12gmndmaivs" path="res://scripts/hero.gd" id="1_06baw"]
+[ext_resource type="PackedScene" uid="uid://6v73wk4pglmc" path="res://scenes/health_component.tscn" id="3_mv13s"]
+
+[node name="Hero" type="Node2D" unique_id=1153301032]
+script = ExtResource("1_06baw")
+
+[node name="BodyComponent" parent="." unique_id=1152251966 instance=ExtResource("1_3uyx6")]
+
+[node name="HealthComponent" parent="." unique_id=1363616037 instance=ExtResource("3_mv13s")]

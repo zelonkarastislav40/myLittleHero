@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://8ejg1vd0kx1h"]
+
+[ext_resource type="Texture2D" uid="uid://fys5jhvpdveq" path="res://sprites/ChatGPT Image Mar 15, 2026, 07_09_46 PM.png" id="1_hkadr"]
+[ext_resource type="Texture2D" uid="uid://c2i1w72dwkhc4" path="res://sprites/Copilot_20260315_194035.png" id="2_1wvgf"]
+
+[node name="equipmentComponent" type="Node2D" unique_id=146026166]
+
+[node name="legs" type="Sprite2D" parent="." unique_id=1090155850]
+position = Vector2(-2.9999995, 111.99999)
+scale = Vector2(0.92857146, 0.7794118)
+texture = ExtResource("1_hkadr")
+region_enabled = true
+region_rect = Rect2(355.6007, 859.79987, 110.00006, 220.00018)
+
+[node name="weapon" type="Sprite2D" parent="." unique_id=1931331529]
+position = Vector2(-112.99999, 18.09092)
+rotation = -1.3754036
+scale = Vector2(0.59437656, 0.86697394)
+texture = ExtResource("2_1wvgf")
+region_enabled = true
+region_rect = Rect2(512.715, 42.557922, 194.87189, 219.67377)
+
+[node name="leftArm" type="Sprite2D" parent="." unique_id=451139749]
+position = Vector2(-62.000004, 33)
+scale = Vector2(0.66129035, 0.79611653)
+texture = ExtResource("1_hkadr")
+region_enabled = true
+region_rect = Rect2(614.2998, 730.0499, 114.400085, 93.50012)
+
+[node name="chest" type="Sprite2D" parent="." unique_id=294754642]
+texture = ExtResource("1_hkadr")
+region_enabled = true
+region_rect = Rect2(478.41055, 278.82062, 134.63876, 152.35437)
+
+[node name="head" type="Sprite2D" parent="." unique_id=1557976457]
+position = Vector2(-11.999998, -88.28125)
+scale = Vector2(0.8988763, 1.0051137)
+texture = ExtResource("1_hkadr")
+region_enabled = true
+region_rect = Rect2(598.4107, 155.61984, 111.32007, 102.85007)
+
+[node name="rightArm" type="Sprite2D" parent="." unique_id=894816551]
+position = Vector2(40, 46.000004)
+rotation = -0.24979512
+scale = Vector2(0.6501775, 0.9026315)
+texture = ExtResource("1_hkadr")
+region_enabled = true
+region_rect = Rect2(617.3004, 546.8501, 112.53003, 95.59009)
